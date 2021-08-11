@@ -1,0 +1,5 @@
+%include "boot.inc"
+section loader vstart=LOADER_BASE_ADDR	
+	mov byte [gs:0x00],'G'
+	mov byte [gs:0x01],0xa4
+	jmp $
